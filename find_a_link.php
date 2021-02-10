@@ -1,10 +1,9 @@
 <?php
 /**
  * Created by PhpStorm.
- * User: cagat
+ * User: cagatay
  * Date: 26.03.2019
  * Time: 20:33
-
  */
 
 
@@ -19,16 +18,12 @@
 
 	echo "<br><br>";
 
-    $value		    =	"https://www.extraegitim.com.tr";
-    $pattern		=	"/^(http(s)?:\/\/.)?(www\.)?[a-zA-Z0-9\.\:\+\-\_\#\=\%\~\@]{2,256}\.[a-z]{2,6}\b([a-zA-Z0-9\.\:\+\-\_\#\=\%\~\@]*)+$/";
-    $result		    =	preg_match($pattern, $value);
+	$value		=	"https://www.extraegitim.com.tr";
+	$pattern	=	"/^(http(s)?:\/\/.)?(www\.)?[a-zA-Z0-9\.\:\+\-\_\#\=\%\~\@]{2,256}\.[a-z]{2,6}\b([a-zA-Z0-9\.\:\+\-\_\#\=\%\~\@]*)+$/";
+	$result		=	preg_match($pattern, $value);
 
-if($result==1){
-    echo "İnput: (" . $value . ") It's a URL";
-}else{
-    echo "İnput (" . $value . ") It's not a URL";
-}
-
-
-
-	?>
+	if($result==1){
+	    echo "İnput: (" . $value . ") It's a URL";
+	}else{
+	    echo "İnput (" . $value . ") It's not a URL";
+	}
