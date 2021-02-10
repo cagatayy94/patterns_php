@@ -14,13 +14,11 @@ echo $value . "<br />";
 echo "<pre>";
 print_r($result);
 echo "</pre>";
-
 echo "<br><br>";
 
-
-$value		    =	"www.cas.com";
-$pattern		= "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
-$result		    =	preg_match($pattern, $value);
+$value      =	"www.cas.com";
+$pattern    = "/^(([^<>()[\]\\.,;:\s@\"]+(\.[^<>()[\]\\.,;:\s@\"]+)*)|(\".+\"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/";
+$result     =	preg_match($pattern, $value);
 
 if($result==1){
     echo "İnput: (" . $value . ") It's an EMAIL";
